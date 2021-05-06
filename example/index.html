@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Drake Interplanetary Terminal</title>
+  <script src="https://cdn.jsdelivr.net/npm/otrm/dist/otrm.bundle.js"></script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script>
+    //https://cdn.jsdelivr.net/npm/otrm/dist
+    OTRM.render("root", {
+      version: 200,
+      logo: "/logo/drake.svg",
+      name: "DRAKE INTERPLANETARY",
+      navigation: {
+        items: [
+          {
+            name: "Examples",
+            page: "examples"
+          }
+        ]
+      },
+      pages: {
+        root: {
+          columns: [
+            {
+              size: 4,
+              sections: [
+                [
+                  {
+                    title: "Resources"
+                  },
+                  {
+                    action: "Ship Loadout Manager",
+                    open: "https://erkul.games/",
+                  },
+                  {
+                    action: "Trading Manager",
+                    open: "https://uexcorp.space/trade",
+                  },
+                  {
+                    action: "Mining Manager",
+                    open: " https://uexcorp.space/mining",
+                  },
+                  {
+                    action: "RSI ENLISTMENT",
+                    open: "https://robertsspaceindustries.com/enlist?referral=STAR-ZNGN-MG6X",
+                  },
+                ],
+                [
+                  {
+                    title: "Pages"
+                  },
+                  {
+                    action: "Examples",
+                    page: "examples"
+                  },
+                ],
+                [
+                  {
+                    title: "Callbacks"
+                  },
+                  {
+                    action: "GitHub",
+                    callback: { open: "https://github.com/DERCHUB/otrm" }
+                  },
+                  {
+                    action: "DERC",
+                    callback: { open: "https://derc.link" }
+                  },
+                ],
+
+              ],
+            },
+            {
+              size: 8,
+              sections: [
+                [
+                  {
+                    widget: OTRM.Widgets.Logo,
+                  },
+                  {
+                    widget: OTRM.Widgets.Markdown,
+                    source: "/md/content.md",
+                  },
+                ]
+              ]
+            }
+          ]
+        },
+        examples: {
+          columns: [{
+            size: 12,
+            sections: [
+              [
+                {
+                  widget: OTRM.Widgets.Markdown,
+                  source: "/md/examples.md",
+                },
+
+              ]
+            ]
+          }]
+        }
+      },
+      styles: {
+        background: 'linear-gradient(0deg, #381616, #963b3b)',
+        columnPadding: 10,
+        columnBorderRadius: 5,
+        headerTopFill: 3,
+        headerDistance: 10,
+      },
+    }, function (event) {
+      if (event.open) {
+        window.open(event.open);
+      }
+    });
+  </script>
+</body>
+
+</html>
