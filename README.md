@@ -18,6 +18,8 @@ A quick introduction into OTRM https://www.youtube.com/watch?v=HWzaeq7kUR0
 
 A basic terminal can be run in a simple HTML container. Just include the following library in your document and use the `OTRM.render` method to get started. We prepared an example in the `example/` folder to get you started right away.
 
+Checkout the video above and the tutorial at [/docs/howto-terminal-from-scratch.md](https://github.com/DERCHUB/otrm/blob/master/docs/howto-terminal-from-scratch.md)
+
 ```html
 <script src="https://cdn.jsdelivr.net/npm/otrm/dist/otrm.bundle.js"></script>
 ```
@@ -30,7 +32,8 @@ A basic terminal can be run in a simple HTML container. Just include the followi
 </script>
 ```
 
-Use the next sections to learn more about our configuration options.
+Use the next sections to learn more about our configuration options. 
+
 
 ---
 
@@ -57,6 +60,10 @@ Please refer to the next sections to learn more about how to configure and use O
 OTRM is split into two sections: Navigation and Pages. 
 
 The `Navigation` allows to select a specific page within the terminal while the `Page` can be split into `Content` parts. Each `Content` part is split by itself in `Sections` allowing to create various representation models while keeping the overal experience on point.
+
+Checkout built-in themes at [/docs/themes.md](https://github.com/DERCHUB/otrm/blob/master/docs/themes.md)
+
+
 
 --- 
 

@@ -3,6 +3,8 @@
 
 This guide will show you how to create a terminal app using OTRM from scratch. This guide expects you to have some knowledge of `javascript`, `react` and a fully working `node` environment.
 
+Watch this video to see it in action: https://www.youtube.com/watch?v=HWzaeq7kUR0
+
 ## (Step 1) Create the app
 
 Get started by creating a new project with `npx creact-react-app <name of your terminal>`
