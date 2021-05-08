@@ -63,8 +63,6 @@ The `Navigation` allows to select a specific page within the terminal while the 
 
 Checkout built-in themes at [/docs/themes.md](https://github.com/DERCHUB/otrm/blob/master/docs/themes.md)
 
-
-
 --- 
 
 # Configuration
