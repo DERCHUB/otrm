@@ -8,6 +8,12 @@ The Operations Terminal System Software or OTRM is a full solution to build and 
 
 ---
 
+# Video Introduction
+
+A quick introduction into OTRM https://www.youtube.com/watch?v=HWzaeq7kUR0
+
+---
+
 # Basic Terminals
 
 A basic terminal can be run in a simple HTML container. Just include the following library in your document and use the `OTRM.render` method to get started. We prepared an example in the `example/` folder to get you started right away.
